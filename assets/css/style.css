@@ -1,4 +1,4 @@
-/*=== base css start === */
+/*=== global css start === */
 * {
   margin: 0;
   padding: 0;
@@ -39,10 +39,152 @@ a:hover {
 
 body {
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
-/*===// end of base css === */
-/*=== layouts css start === */
-/*===// end of layouts css === */
-/*=== pages css start === */
-/*===// end of pages css === *//*# sourceMappingURL=style.css.map */
+/*===// end of global css === */
+/*=== page-10-content css start === */
+.page-10-content {
+  box-shadow: 0px 0px 12.09px 0.91px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  border-radius: 25px;
+  border-top: 5px solid #9b2586;
+  border-bottom: 5px solid #9b2586;
+  padding: 40px 30px;
+  margin: 60px 0;
+}
+@media (max-width: 991px) {
+  .page-10-content {
+    padding: 30px 15px;
+    margin: 30px 0;
+  }
+}
+.page-10-content .top-heaidng {
+  font-size: 26px;
+  color: #606060;
+  font-weight: 400;
+}
+@media (max-width: 991px) {
+  .page-10-content .top-heaidng {
+    font-size: 20px;
+  }
+}
+.page-10-content .donation-amount .form-control {
+  background-color: #f5e9f3;
+  font-size: 50px;
+  color: #9b2586;
+  font-weight: 500;
+  padding-left: 80px;
+}
+.page-10-content .donation-amount .form-control::-moz-placeholder {
+  color: inherit;
+}
+.page-10-content .donation-amount .form-control:-ms-input-placeholder {
+  color: inherit;
+}
+.page-10-content .donation-amount .form-control::placeholder {
+  color: inherit;
+}
+.page-10-content .donation-amount .currency {
+  font-size: 50px;
+  color: #9b2586;
+  font-weight: 500;
+  line-height: 30px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-40%);
+}
+.page-10-content .donation-amount .currency span {
+  font-size: 20px;
+}
+.page-10-content .donation-amount small {
+  color: #606060;
+  font-size: 16px;
+}
+.page-10-content .donation-amount .tip p {
+  font-size: 20px;
+  color: #606060;
+}
+.page-10-content .donation-amount .tip .form-select {
+  font-size: 18px;
+  color: #606060;
+  border-color: #686666;
+  padding: 12px 24px;
+  border-radius: 10px;
+}
+.page-10-content .pay-as .heaidng {
+  font-size: 20px;
+  color: #606060;
+  font-weight: 600;
+}
+.page-10-content .pay-as-card {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.page-10-content .pay-as .nav-tabs .nav-link {
+  color: #606060;
+  font-size: 20px;
+  border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.page-10-content .pay-as .nav-tabs .nav-link.active {
+  color: #000;
+  position: relative;
+}
+.page-10-content .pay-as .nav-tabs .nav-link.active::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  transform: translateX(-50%);
+}
+.page-10-content .pay-as label {
+  font-size: 18px;
+  color: #606060;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.page-10-content .pay-as .form-select,
+.page-10-content .pay-as .form-control {
+  font-size: 18px;
+  color: #606060;
+  border-color: #686666;
+  padding: 12px 24px;
+  border-radius: 10px;
+}
+.page-10-content .pay-as .form-select::-moz-placeholder, .page-10-content .pay-as .form-control::-moz-placeholder {
+  font-weight: 300;
+}
+.page-10-content .pay-as .form-select:-ms-input-placeholder, .page-10-content .pay-as .form-control:-ms-input-placeholder {
+  font-weight: 300;
+}
+.page-10-content .pay-as .form-select::placeholder,
+.page-10-content .pay-as .form-control::placeholder {
+  font-weight: 300;
+}
+.page-10-content .pay-as .btn-submit {
+  background-color: #fdb934;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 30px;
+  border-radius: 10px;
+}
+.page-10-content .pay-as .btn-submit:hover {
+  background-color: #fca702;
+}
+.page-10-content .pay-as .footer-link {
+  font-weight: 300;
+}
+.page-10-content .pay-as .footer-link a {
+  color: #9b2586;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+/*===// end of page-10-content css === *//*# sourceMappingURL=style.css.map */
