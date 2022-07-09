@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>myissues</title>
+  <link rel='shortcut icon' href='assets/images/logo.png' type='image/x-icon'>
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body style="background-color: #fafafa;">
+
+  <!-- === header section start === -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+
+        <a href="#" class="btn btn-primary ms-auto d-lg-none me-2">Login</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primary d-none d-lg-inline-block">Login</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- ===//end of header section === -->
+
+  <main>
+    <div class="container">
+      <div class="page-10-content">
+        <h3 class="top-heaidng">Enter your donation:</h3>
+        <div class="row">
+          <div class="col-lg-8">
+            <form>
+              <!-- === donation-amount section start === -->
+              <section class="donation-amount">
+                <div class="position-relative">
+                  <input type="text" placeholder="0.00" class="form-control donate-input text-end">
+                  <p class="currency text-center">$ <br> CAD</p>
+                </div>
+                <p><small>MyIssues Inc. will be expanding to other communities and reslies on the generousity of donours
+                    like you to operate our service.</small></p>
+                <div class="row gy-4 justify-content-between tip">
+                  <div class="col-md-6">
+                    <p>Thank you for including a tip of :</p>
+                  </div>
+                  <div class="col-md-6">
+                    <select class="form-select">
+                      <option>15%</option>
+                      <option>25%</option>
+                      <option>50%</option>
+                    </select>
+                    <p class="text-end">Total Charge:</p>
+                  </div>
+                </div>
+              </section>
+              <!-- ===//end of donation-amount section === -->
+
+
+              <!-- === pay-as section start === -->
+              <section class="pay-as">
+                <h3 class="heading">Pay as:</h3>
+                <div class="pay-as-card">
+                  <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <button class="nav-link active" id="nav-guest-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-guest" type="button" role="tab" aria-controls="nav-guest"
+                        aria-selected="true">Guest</button>
+                      <button class="nav-link" id="nav-registered-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-registered" type="button" role="tab" aria-controls="nav-registered"
+                        aria-selected="false">Registered user</button>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-guest" role="tabpanel"
+                      aria-labelledby="nav-guest-tab">
+                      <div class="row g-4">
+                        <div class="col-md-6">
+                          <label>Your Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                          <label>Your Last Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                          <label>Your Email Email</label>
+                          <input type="email" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                          <label>Select Country</label>
+                          <select class="form-select">
+                            <option>Country</option>
+                            <option>UK</option>
+                            <option>Bangladesh</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6">
+                          <label>Postal Code</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-registered" role="tabpanel" aria-labelledby="nav-registered-tab">
+                      <div class="row g-4">
+                        <div class="col-md-6">
+                          <label>Your Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                          <label>Your Last Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                          <label>Your Email Email</label>
+                          <input type="email" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                          <label>Select Country</label>
+                          <select class="form-select">
+                            <option>Country</option>
+                            <option>UK</option>
+                            <option>Bangladesh</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6">
+                          <label>Postal Code</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-continue">Continue</button>
+                  </div>
+                  <p class="footer-link">By continuing, you agree to the Myissues Terms and acknowledge receipt of our
+                    <a href="#">Privacy
+                      Policy</a>
+                    <br> <br>
+                    <a href="#">Go Back </a>
+                  </p>
+                </div>
+              </section>
+              <!-- ===//end of pay-as section === -->
+            </form>
+          </div>
+          <div class="col-lg-4"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- === banner section start === -->
+
+  <!-- ===//end of banner section === -->
+
+
+  <!-- === ? section start === -->
+  <section class="?">
+
+  </section>
+  <!-- ===//end of ? section === -->
+
+
+  <!-- === footer section start === -->
+  <footer>
+
+  </footer>
+  <!-- ===//end of footer section === -->
+
+
+
+
+
+  <script src="assets/vendor/bootstrap/js/popper.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
