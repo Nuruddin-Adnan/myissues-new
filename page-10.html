@@ -56,7 +56,10 @@
               <a class="nav-link disabled">Disabled</a>
             </li>
           </ul>
-          <a href="#" class="btn btn-primary d-none d-lg-inline-block">Login</a>
+          <a href="#" class="btn btn-primary d-none d-lg-inline-block" data-bs-toggle="modal"
+            data-bs-target="#page-10-login">Login</a>
+          <a href="#" class="btn btn-danger ms-2 d-none d-lg-inline-block" data-bs-toggle="modal"
+            data-bs-target="#page-10-register">Register</a>
         </div>
       </div>
     </nav>
@@ -282,9 +285,241 @@
 
 
 
-  <!-- === banner section start === -->
+  <!-- === page-10-login modal start === -->
+  <div class="modal fade page-10-login-register" id="page-10-login" tabindex="-1" aria-labelledby="page-10-loginLabel"
+    aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content border-0">
+        <div class="modal-header d-block text-center">
+          <h4 class="modal-title text-uppercase" id="page-10-loginLabel">
+            <strong>LOGIN</strong>
+          </h4>
+          <button type="button" class="btn-close position-absolute top-0 end-0 p-4" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-md-4">
+          <form>
+            <div class="row gy-4">
+              <div class="col-12">
+                <label class="text-semibold">Username or E-mail</label>
+                <input type="text" class="form-control" placeholder="User Name ">
+              </div>
+              <div class="col-12">
+                <label class="text-semibold">Password</label>
+                <input type="password" class="form-control" placeholder="Password">
+              </div>
+              <div class="col-12">
+                <div class="row g-3">
+                  <div class="col-sm-3 col-6">
+                    <label class="text-center radio-label">
+                      <input type="radio" name="login-radio" checked>
+                      <br>
+                      Browser Donor
+                    </label>
+                  </div>
+                  <div class="col-sm-3 col-6">
+                    <label class="text-center radio-label">
+                      <input type="radio" name="login-radio">
+                      <br>
+                      Receiver Advertiser
+                    </label>
+                  </div>
+                  <div class="col-sm-3 col-6">
+                    <label class="text-center radio-label">
+                      <input type="radio" name="login-radio">
+                      <br>
+                      Agency Community
+                    </label>
+                  </div>
+                  <div class="col-sm-3 col-6">
+                    <label class="text-center radio-label">
+                      <input type="radio" name="login-radio">
+                      <br>
+                      Volunteers Helper
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check mt-2">
+                  <input class="form-check-input" type="checkbox" id="login-remember">
+                  <label for="login-remember" class="form-check-label"> Remember me </label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn w-100 my-3 btn-submit">Login</button>
 
-  <!-- ===//end of banner section === -->
+            <div class="footer-text d-md-flex justify-content-between">
+              <p class="mb-md-0 mb-4">New to MyIssues? <a href="#" data-bs-toggle="modal"
+                  data-bs-target="#page-10-register">SignUp</a> </p> <a href="#" data-bs-toggle="modal"
+                data-bs-target="#page-10-forgot-password">Forgot your password?</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ===//end of page-10-login modal === -->
+
+
+
+  <!-- === page-10-register modal start === -->
+  <div class="modal fade page-10-login-register" id="page-10-register" tabindex="-1"
+    aria-labelledby="page-10-registerLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content border-0">
+        <div class="modal-header d-block text-center">
+          <h4 class="modal-title text-uppercase" id="page-10-registerLabel">
+            <strong>Register</strong>
+          </h4>
+          <button type="button" class="btn-close position-absolute top-0 end-0 p-4" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-md-4">
+          <form>
+            <div class="row gy-4">
+              <div class="col-12">
+                <label class="text-semibold">User Name</label>
+                <input type="text" class="form-control" placeholder="User Name ">
+              </div>
+              <div class="col-12">
+                <label class="text-semibold">First Name</label>
+                <input type="text" class="form-control" placeholder="First Name">
+              </div>
+              <div class="col-12">
+                <label class="text-semibold">Last Name</label>
+                <input type="text" class="form-control" placeholder="Last Name">
+              </div>
+              <div class="col-12">
+                <label class="text-semibold">E-mail Address*</label>
+                <input type="email" class="form-control" placeholder="E-mail Address*">
+              </div>
+              <div class="col-12">
+                <label class="text-semibold">Password*</label>
+                <input type="password" class="form-control" placeholder="Password*">
+              </div>
+              <div class="col-12">
+                <label class="text-semibold">Confirm Password*</label>
+                <input type="password" class="form-control" placeholder="Confirm Password*">
+              </div>
+              <div class="col-12">
+                <div class="row g-3">
+                  <div class="col-sm-3 col-6">
+                    <label class="text-center radio-label">
+                      <input type="radio" name="register-radio" checked>
+                      <br>
+                      Browser Donor
+                    </label>
+                  </div>
+                  <div class="col-sm-3 col-6">
+                    <label class="text-center radio-label">
+                      <input type="radio" name="register-radio">
+                      <br>
+                      Receiver Advertiser
+                    </label>
+                  </div>
+                  <div class="col-sm-3 col-6">
+                    <label class="text-center radio-label">
+                      <input type="radio" name="register-radio">
+                      <br>
+                      Agency Community
+                    </label>
+                  </div>
+                  <div class="col-sm-3 col-6">
+                    <label class="text-center radio-label">
+                      <input type="radio" name="register-radio">
+                      <br>
+                      Volunteers Helper
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check mt-2">
+                  <input class="form-check-input" type="checkbox" id="register-agree">
+                  <label for="register-agree" class="form-check-label"> I agree to the terms & condition </label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn w-100 my-3 btn-submit">REGISTER</button>
+
+            <div class="footer-text text-center">
+              <p>By continuing, you agree to the <a href="#">Myissues terms</a> and
+                <a href="#">Acknowledge receipt our Privacy Policy.</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ===//end of page-10-register modal === -->
+
+
+  <!-- === page-10-Forgot Password modal start === -->
+  <div class="modal fade page-10-login-register" id="page-10-forgot-password" tabindex="-1"
+    aria-labelledby="page-10-forgot-passwordLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content border-0">
+        <div class="modal-header d-block text-center">
+          <h4 class="modal-title text-uppercase" id="page-10-forgot-passwordLabel">
+            <strong>Forgot Password</strong>
+          </h4>
+          <button type="button" class="btn-close position-absolute top-0 end-0 p-4" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-md-4">
+          <form>
+            <div class="row gy-4">
+              <div class="col-12">
+                <label class="text-semibold">Enter your register email address</label>
+                <input type="email" class="form-control" placeholder="Email Address">
+              </div>
+              <div class="col-12">
+                <div class="row g-3">
+                  <div class="col-sm-3 col-6">
+                    <label class="text-center radio-label">
+                      <input type="radio" name="forgot-password-radio" checked>
+                      <br>
+                      Browser Donor
+                    </label>
+                  </div>
+                  <div class="col-sm-3 col-6">
+                    <label class="text-center radio-label">
+                      <input type="radio" name="forgot-password-radio">
+                      <br>
+                      Receiver Advertiser
+                    </label>
+                  </div>
+                  <div class="col-sm-3 col-6">
+                    <label class="text-center radio-label">
+                      <input type="radio" name="forgot-password-radio">
+                      <br>
+                      Agency Community
+                    </label>
+                  </div>
+                  <div class="col-sm-3 col-6">
+                    <label class="text-center radio-label">
+                      <input type="radio" name="forgot-password-radio">
+                      <br>
+                      Volunteers Helper
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn w-100 my-3 btn-submit mt-4">Recover Password</button>
+
+            <div class="footer-text">
+              <p class="mb-md-0 mb-4">Have Account? <a href="#" data-bs-toggle="modal"
+                  data-bs-target="#page-10-login">Login</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ===//end of page-10-Forgot Password modal === -->
 
 
 
