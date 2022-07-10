@@ -1,0 +1,95 @@
+.footer {
+    background: url(../images/footer-BG.png) no-repeat center center/cover;
+    padding-top: 40px;
+
+    .footer-description {
+        font-size: 16px;
+        font-weight: 300;
+        color: #000;
+        line-height: 20px;
+        margin: 30px 0;
+    }
+
+    .link-heading {
+        font-size: 18px;
+        font-weight: 600;
+        color: #000;
+        border-bottom: 1px solid #000;
+        display: inline-block;
+        margin-bottom: 30px;
+        margin-top: 60px;
+
+        @media (max-width: 767px) {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    ul {
+        margin-bottom: 30px;
+
+        .footer-link {
+            font-size: 16px;
+            font-weight: 300;
+            color: #000;
+            margin: 8px 0;
+            display: inline-block;
+
+            @media (max-width: 767px) {
+                margin: 5px 0;
+            }
+
+            &:hover {
+                color: #006f85;
+            }
+        }
+
+        &.pink.social-link {
+            .footer-link {
+                color: #9b2586;
+                margin: 5px 0;
+
+                i {
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        &.cyan.contact-list {
+            .footer-link {
+                color: #006f85;
+
+                i {
+                    display: block;
+                    padding-right: 15px;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+
+    .btn.outline-info {
+        font-size: 18px;
+        font-weight: 500;
+        color: #006f85;
+        border: 1px solid #006f85;
+        border-radius: 25px;
+
+        &:hover {
+            background-color: #006f85;
+            color: #fff;
+        }
+    }
+
+    .copyright {
+        background: rgba(#006f85, 0.05);
+        padding: 30px 0 20px 0;
+        margin-top: 20px;
+
+        .copyright-text {
+            font-size: 14px;
+            font-weight: 300;
+            color: #000;
+        }
+    }
+}

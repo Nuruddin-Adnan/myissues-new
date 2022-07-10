@@ -1,35 +1,35 @@
 /*=== global css start === */
-@import 'base/global';
+@use 'base/global';
 /*===// end of global css === */
 
 /*=== utility css start === */
-@import 'base/utility';
+@use 'base/utility';
 /*===// end of utility css === */
 
 
 /*=== layouts css start === */
 
 /*=== page-10-header css start === */
-@import 'layouts/page-10-header';
+@use 'layouts/page-10-header';
 /*===// end of page-10-header css === */
 
 /*=== steps-header css start === */
-@import 'layouts/steps-header';
+@use 'layouts/steps-header';
 /*===// end of steps-header css === */
 
-@import 'layouts/footer';
+@use 'layouts/footer';
 /*===// end of layouts css === */
 
 
 /*=== page-10-content css start === */
-@import 'pages/page-10-content';
+@use 'pages/page-10-content';
 /*===// end of page-10-content css === */
 
 
 /*=== _nformation-about-donation css start === */
-@import 'pages/information-about-donation';
+@use 'pages/information-about-donation';
 /*===// end of information-about-donation css === */
 
 /*=== thanks-page-content css start === */
-@import 'pages/thanks-page-content';
+@use 'pages/thanks-page-content';
 /*===// end of thanks-page-content css === */
