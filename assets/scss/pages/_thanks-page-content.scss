@@ -1,0 +1,59 @@
+.thanks-page-content {
+    padding: 60px 0 100px;
+
+    .success-greeting {
+        background-color: #c8f2d4;
+        border-radius: 4px;
+        max-width: 790px;
+        margin: auto;
+        padding: 10px 20px;
+
+        .fa-check-circle {
+            font-size: 60px;
+            color: #27b775;
+
+            @media (max-width: 575px) {
+                font-size: 40px;
+            }
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #3b3c40;
+
+            @media (max-width: 575px) {
+                font-size: 17px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #3b3c40;
+            margin-top: 5px;
+
+            @media (max-width: 575px) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .appreciate-support {
+        font-size: 16px;
+        font-weight: 600;
+        color: #3b3c40;
+    }
+
+    .btn-back {
+        background-color: #0c6475;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 8px 30px;
+
+        &:hover {
+            background-color: darken(#0c6475, 10);
+        }
+    }
+}

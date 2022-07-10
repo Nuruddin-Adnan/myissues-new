@@ -50,9 +50,7 @@ body {
 
 .text-purple {
   color: #9b2586;
-}
-
-/*===// end of utility css === */
+} /*===// end of utility css === */
 /*=== page-10-content css start === */
 .page-10-content {
   box-shadow: 0px 0px 12.09px 0.91px rgba(0, 0, 0, 0.25);
@@ -292,7 +290,7 @@ body {
 }
 
 /*===// end of page-10-content css === */
-/*=== _information-about-donation css start === */
+/*=== _nformation-about-donation css start === */
 #information-about-donation .modal-header {
   background-color: #f4f5ef;
 }
@@ -317,4 +315,62 @@ body {
   }
 }
 
-/*===// end of _information-about-donation css === *//*# sourceMappingURL=style.css.map */
+/*===// end of information-about-donation css === */
+/*=== thanks-page-content css start === */
+.thanks-page-content {
+  padding: 60px 0 100px;
+}
+.thanks-page-content .success-greeting {
+  background-color: #c8f2d4;
+  border-radius: 4px;
+  max-width: 790px;
+  margin: auto;
+  padding: 10px 20px;
+}
+.thanks-page-content .success-greeting .fa-check-circle {
+  font-size: 60px;
+  color: #27b775;
+}
+@media (max-width: 575px) {
+  .thanks-page-content .success-greeting .fa-check-circle {
+    font-size: 40px;
+  }
+}
+.thanks-page-content .success-greeting h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #3b3c40;
+}
+@media (max-width: 575px) {
+  .thanks-page-content .success-greeting h1 {
+    font-size: 17px;
+  }
+}
+.thanks-page-content .success-greeting p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #3b3c40;
+  margin-top: 5px;
+}
+@media (max-width: 575px) {
+  .thanks-page-content .success-greeting p {
+    font-size: 12px;
+  }
+}
+.thanks-page-content .appreciate-support {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3b3c40;
+}
+.thanks-page-content .btn-back {
+  background-color: #0c6475;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 30px;
+}
+.thanks-page-content .btn-back:hover {
+  background-color: #073c47;
+}
+
+/*===// end of thanks-page-content css === *//*# sourceMappingURL=style.css.map */
