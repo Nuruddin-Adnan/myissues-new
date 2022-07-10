@@ -19,47 +19,43 @@
 
   <!-- === header section start === -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand navbar-light bg-white page-10-header">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo" class="img-fluid"></a>
 
-        <a href="#" class="btn btn-primary ms-auto d-lg-none me-2">Login</a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto align-items-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
+              <a class="nav-link corona me-md-5" aria-current="page" href="#">
+                <img src="assets/images/icon/corona.png" alt="icon"> <span class="d-lg-inline d-none">Covid-19</span>
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-question-circle"></i></a>
+            </li>
+            <li class="nav-item d-md-block d-none">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#page-10-login">Sign Up </a>
+            </li>
+            <li class="nav-item d-md-block d-none">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#page-10-register">Login</a>
+            </li>
+            <li class="nav-item dropdown d-md-none">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="assets/images/icon/Menu.png" alt="icon" class="img-fluid">
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li> <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#page-10-login">Sign Up
+                  </a></li>
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                    data-bs-target="#page-10-register">Login</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
           </ul>
-          <a href="#" class="btn btn-primary d-none d-lg-inline-block" data-bs-toggle="modal"
-            data-bs-target="#page-10-login">Login</a>
-          <a href="#" class="btn btn-danger ms-2 d-none d-lg-inline-block" data-bs-toggle="modal"
-            data-bs-target="#page-10-register">Register</a>
         </div>
       </div>
     </nav>

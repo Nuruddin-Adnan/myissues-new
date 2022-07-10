@@ -1,0 +1,29 @@
+.page-10-header {
+    .navbar-brand {
+        max-width: 190px;
+
+        @media (max-width: 767px) {
+            max-width: 140px;
+        }
+    }
+
+    .navbar-nav {
+        .nav-link {
+            font-size: 18px;
+            color: #000;
+
+            @media (min-width: 992px) {
+                padding-right: 1rem;
+                padding-left: 1rem;
+            }
+
+            &.corona {
+                color: #cc0809;
+            }
+
+            i {
+                color: #9b2586;
+            }
+        }
+    }
+}

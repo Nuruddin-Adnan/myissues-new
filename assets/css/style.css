@@ -52,6 +52,33 @@ body {
   color: #9b2586;
 } /*===// end of utility css === */
 /*=== layouts css start === */
+/*=== page-10-header css start === */
+.page-10-header .navbar-brand {
+  max-width: 190px;
+}
+@media (max-width: 767px) {
+  .page-10-header .navbar-brand {
+    max-width: 140px;
+  }
+}
+.page-10-header .navbar-nav .nav-link {
+  font-size: 18px;
+  color: #000;
+}
+@media (min-width: 992px) {
+  .page-10-header .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+.page-10-header .navbar-nav .nav-link.corona {
+  color: #cc0809;
+}
+.page-10-header .navbar-nav .nav-link i {
+  color: #9b2586;
+}
+
+/*===// end of page-10-header css === */
 /*=== steps-header css start === */
 .steps-header .navbar-brand {
   width: 100%;
