@@ -7,10 +7,14 @@
 /*===// end of utility css === */
 
 
-// /*=== layouts css start === */
-// @import 'layouts/navbar';
-// @import 'layouts/footer';
-// /*===// end of layouts css === */
+/*=== layouts css start === */
+
+/*=== steps-header css start === */
+@import 'layouts/steps-header';
+/*===// end of steps-header css === */
+
+@import 'layouts/footer';
+/*===// end of layouts css === */
 
 
 /*=== page-10-content css start === */

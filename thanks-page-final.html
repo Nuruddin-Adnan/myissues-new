@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/slick/slick.css">
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -19,27 +20,26 @@
 <body style="background-color: #fafafa;">
     <!-- ===== header section start ===== -->
     <header class="steps-header">
-        <nav class="navbar navbar-light bg-white">
+        <nav class="navbar navbar-expand navbar-light bg-white">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="assets/images/logo.png" alt="logo" class="img-fluid">
                 </a>
-
-                <ul class="steps-slider">
+                <ul class="steps-slider navbar-nav">
                     <li>
-                        <a href="#" class="d-flex align-items-center">
+                        <a href="#" class="d-flex align-items-center nav-link">
                             <p class="number">1</p>
                             <div class="text">der Details <i class="far fa-angle-right"></i></div>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="d-flex align-items-center">
+                        <a href="#" class="d-flex align-items-center nav-link">
                             <p class="number">2</p>
                             <div class="text">Confirm & Pay <i class="far fa-angle-right"></i></div>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="d-flex align-items-center active">
+                        <a href="#" class="d-flex align-items-center nav-link active">
                             <p class="number">3</p>
                             <div class="text">Submit Requirements</div>
                         </a>
@@ -70,9 +70,46 @@
     </main>
 
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/vendor/bootstrap/js/popper.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/slick/slick.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script>
+        $('.steps-slider').slick({
+            dots: false,
+            arrows: true,
+            prevArrow: "<i class='far fa-angle-left slick-prev'></i>",
+            nextArrow: "",
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            responsive: [
+                {
+                    breakpoint: 3000,
+                    settings: "unslick"
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        initialSlide: 1,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        initialSlide: 2,
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
 </body>
 
 </html>
